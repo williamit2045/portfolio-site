@@ -1,9 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import textureA from '../assets/carbon_fibre.webp';
+
+
 
 const Navigation = () => (
-  <nav className="bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900 text-white shadow-lg py-4 px-10 flex justify-between items-center">
-    <div className="text-3xl font-extrabold tracking-wider text-silver-200">My Portfolio</div>
+  <nav className="text-white shadow-lg py-4 px-10 flex justify-between items-center"
+  style={{
+    background: 'transparent',
+    borderBottom: '1rem solid black'
+  }}>
+
+
+
+<div className="hidden sm:block text-3xl font-extrabold tracking-wider text-silver-200">Collective-IQ</div>
     <ul className="flex space-x-8">
       {[
         { label: 'Home', path: '/' },

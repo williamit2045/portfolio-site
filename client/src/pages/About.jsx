@@ -1,6 +1,8 @@
 import React from 'react';
 import { Shield, Brain, Globe, Code, Linkedin, Mail, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
+import textureB from '../assets/double-bubble-dark.webp';
+import texture from '../assets/folk-pattern-black.webp';
 
 const About = () => {
   const techSkills = [
@@ -24,7 +26,7 @@ const About = () => {
     },
     {
       title: 'Web economics and innovation',
-      description: 'Learned in the market potential of ever-emreging tech niches',
+      description: 'Learned in the market potential of ever-emerging tech niches.',
       icon: Shield,
       link: 'https://developer.mozilla.org/en-US/docs/Learn/Accessibility'
     }
@@ -33,7 +35,7 @@ const About = () => {
   const interests = [
     {
       title: 'Paleontology and Macro-Evolutionary Mechanisms',
-      description: 'Deep history points to the punctuating equillibrium of our time',
+      description: 'Deep history points to the punctuating equilibrium of our time.',
       icon: Globe,
       link: 'https://en.wikipedia.org/wiki/Evolution'
     },
@@ -82,20 +84,27 @@ const About = () => {
       icon: Code,
       link: 'https://www.udemy.com/course/the-web-developer-bootcamp/'
     },
-    
     {
       title: 'Y Combinator Startup School (2021)',
       description: 'Completed a program focused on startup development and entrepreneurial strategies.',
       icon: Globe,
       link: 'https://www.startupschool.org'
-    }];
+    }
+  ];
 
   return (
     <div
       className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white"
+      style={{
+        backgroundImage: `url(${textureB})`,
+        backgroundSize: 'auto', // Use original size for tiling
+        backgroundRepeat: 'repeat', // Repeat the texture across the entire background
+        borderRadius: '0rem'
+      }}
+      
     >
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center space-y-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -106,26 +115,23 @@ const About = () => {
           </motion.div>
           <h1 className="text-5xl font-bold">Living on the Edge:</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            From the Navy, to Academia, to Web Innovation, I'm familiar with the fault-lines between various cultures, institutions, an academic subjects.
-            </p>
-            
-            <p>
-            To preserve my soul - the integration of my learning - I am tasked with honoring my hard-won learning that only some institutions are prepared to integrate right no.
-            </p>
-            
-           <p> 
-              My way is therefore by leveraging military experience and technical expertise to foster innovation, community, and the empowerement of others like me, because we're needed somewhere.
-              </p>
-          
+            From the Navy, to Academia, to Web Innovation, I'm familiar with the fault-lines between various cultures, institutions, and academic subjects.
+          </p>
         </div>
       </section>
 
       {/* Tech Skills Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h2 className="text-3xl font-bold mb-8 text-blue-400">Tech Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {techSkills.map((skill, index) => (
-            <motion.a
+            <motion.a style={{
+              backgroundImage: `url(${texture})`,
+              backgroundSize: 'auto', // Use original size for tiling
+              backgroundRepeat: 'repeat', // Repeat the texture across the entire background
+              border: '1px solid #333',
+              borderRadius: '0rem'
+            }}
               href={skill.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -146,9 +152,16 @@ const About = () => {
       {/* Interests Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold mb-8 text-red-400">Interests</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
           {interests.map((interest, index) => (
-            <motion.a
+            <motion.a style={{
+              backgroundImage: `url(${texture})`,
+              backgroundSize: 'auto', // Use original size for tiling
+              backgroundRepeat: 'repeat', // Repeat the texture across the entire background
+              border: '1px solid #333',
+              borderRadius: '0rem'
+            }}
               href={interest.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -171,7 +184,13 @@ const About = () => {
         <h2 className="text-3xl font-bold mb-8 text-blue-400">Education</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {education.map((edu, index) => (
-            <motion.a
+            <motion.a style={{
+              backgroundImage: `url(${texture})`,
+              backgroundSize: 'auto', // Use original size for tiling
+              backgroundRepeat: 'repeat', // Repeat the texture across the entire background
+              border: '1px solid #333',
+              borderRadius: '0rem'
+            }}
               href={edu.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -205,7 +224,13 @@ const About = () => {
             icon: Brain,
             link: 'https://www.ted.com/tedx'
           }].map((item, index) => (
-            <motion.a
+            <motion.a style={{
+              backgroundImage: `url(${texture})`,
+              backgroundSize: 'auto', // Use original size for tiling
+              backgroundRepeat: 'repeat', // Repeat the texture across the entire background
+              border: '1px solid #333',
+              borderRadius: '0rem'
+            }}
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
