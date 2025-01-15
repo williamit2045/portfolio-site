@@ -13,7 +13,7 @@ const Navigation = () => (
 
 
 
-<div className="hidden sm:block text-3xl font-extrabold tracking-wider text-silver-200">Collective-IQ</div>
+<div className="hidden sm:block text-3xl font-extrabold tracking-wider text-silver-200">William Teach</div>
     <ul className="flex space-x-8">
       {[
         { label: 'Home', path: '/' },
