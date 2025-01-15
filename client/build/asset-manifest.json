@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e482596.css",
+    "main.js": "/static/js/main.cd936f14.js",
+    "static/js/488.5dc00adb.chunk.js": "/static/js/488.5dc00adb.chunk.js",
+    "static/media/connectwork.webp": "/static/media/connectwork.e3a916ace5433b975c92.webp",
+    "static/media/double-bubble-dark.webp": "/static/media/double-bubble-dark.6391b207f11a8e56d70c.webp",
+    "static/media/paisley.webp": "/static/media/paisley.11d35c69e2b6f6dfd8f2.webp",
+    "static/media/circle-blues.webp": "/static/media/circle-blues.4c65142b594f34137479.webp",
+    "static/media/spiration-dark.webp": "/static/media/spiration-dark.35ff1a035b6de0c8eb82.webp",
+    "index.html": "/index.html",
+    "static/media/folk-pattern-black.webp": "/static/media/folk-pattern-black.f0bfe78611588cc8ed0b.webp",
+    "static/media/carbon_fibre.webp": "/static/media/carbon_fibre.dd9c8cb2e3c230ee8556.webp",
+    "main.5e482596.css.map": "/static/css/main.5e482596.css.map",
+    "main.cd936f14.js.map": "/static/js/main.cd936f14.js.map",
+    "488.5dc00adb.chunk.js.map": "/static/js/488.5dc00adb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e482596.css",
+    "static/js/main.cd936f14.js"
+  ]
+}
