@@ -1,32 +1,15 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer
-    className="bg-black border-t border-gray-800 py-8 px-4 text-center"
-    style={{
-      backgroundImage: 'url(/assets/prism.png)',
-      backgroundSize: 'cover',
-      backgroundBlendMode: 'multiply',
-    }}
-  >
-    <div className="text-gray-400 text-sm font-semibold">
-      &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
-    </div>
-
-    <div className="mt-6 space-y-4 text-teal-400 text-xs font-sans tracking-wide">
+  
+    <footer className="mt-auto py-4 border-t border-gray-800 text-center text-sm text-gray-500">
       <p>
-        Only when people stop projecting their insecurities upon one another will the world be just.
-        This is the endgame of social justice.
+        &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
       </p>
-      <p>
-        The individual has a responsibility to exercise their right to think as one being,
-        independent from the rest.
+      <p className="mt-2 italic text-gray-400">
+        Only when people stop projecting their insecurities upon one another will the world be just. This is the endgame of social justice.
       </p>
-      <p>
-        When we fail to do this, our communities become corrupt.
-      </p>
-    </div>
-  </footer>
+    </footer>
 );
 
 export default Footer;

@@ -8,19 +8,19 @@ const About = () => {
   const techSkills = [
     {
       title: 'Full-Stack Website Development',
-      description: 'Proficient in Node.js, Express, React, and MongoDB.',
+      description: 'Seriously Proficient in Node.js, Express, Javascript, Next.js, MongoDB, and PostgreSQL.',
       icon: Code,
       link: 'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs'
     },
     {
       title: 'Data Analysis',
-      description: 'Experienced in using SQL, Python, and data visualization tools.',
+      description: 'Experienced using SQL, Python, basic Machine Learning, and data visualization tools.',
       icon: Brain,
       link: 'https://www.python.org/'
     },
     {
       title: 'UI/UX Design',
-      description: 'Skilled in creating responsive and user-friendly interfaces.',
+      description: 'Experienced with tools as Adobe Photoshop, Illustrator, Figma, and creating responsive interfaces.',
       icon: Shield,
       link: 'https://developer.mozilla.org/en-US/docs/Learn/Accessibility'
     },
@@ -113,16 +113,19 @@ const About = () => {
           >
             <Shield className="h-16 w-16 text-white" />
           </motion.div>
-          <h1 className="text-5xl font-bold">Living on the Edge:</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            From the Navy, to Academia, to Web Innovation, I'm familiar with the fault-lines between various cultures, institutions, and academic subjects.
+          <h1 className="text-3xl font-bold mb-8 text-blue-400">Living on the Edge:</h1>
+          <p className="text-xl text-blue-300 max-w-1x1 mx-auto">
+            From my years in the Navy, Academia, and now in Web Innovation,
           </p>
+          <p className="text-xl text-blue-300 max-w-1x1 mx-auto">
+          I'm familiar with the fault-lines between cultures.
+          </p>         
         </div>
       </section>
 
       {/* Tech Skills Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h2 className="text-3xl font-bold mb-8 text-blue-400">Tech Skills</h2>
+        <h2 className="text-3xl font-bold mb-8 text-green-400">Tech Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {techSkills.map((skill, index) => (
             <motion.a style={{
@@ -142,7 +145,7 @@ const About = () => {
               <skill.icon className="h-8 w-8 text-blue-400" />
               <div>
                 <h3 className="text-xl font-semibold text-white">{skill.title}</h3>
-                <p className="text-sm text-gray-300">{skill.description}</p>
+                <p className="text-sm text-green-300">{skill.description}</p>
               </div>
             </motion.a>
           ))}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import textureA from '../assets/carbon_fibre.webp';
 
 
 
@@ -13,7 +12,7 @@ const Navigation = () => (
 
 
 
-<div className="hidden sm:block text-3xl font-extrabold tracking-wider text-silver-200">William Teach</div>
+<div className="hidden sm:block text-3xl font-extrabold tracking-wider text-green-200">William Teach</div>
     <ul className="flex space-x-8">
       {[
         { label: 'Home', path: '/' },
@@ -24,11 +23,11 @@ const Navigation = () => (
         <li key={index} className="relative group">
           <Link
             to={link.path}
-            className="text-lg font-medium px-4 py-2 transition-all duration-300 ease-in-out group-hover:text-yellow-300"
+            className="text-lg font-medium px-4 py-2 transition-all duration-300 ease-in-out group-hover:text-green-300"
           >
             {link.label}
           </Link>
-          <span className="absolute bottom-0 left-0 w-0 h-1 bg-yellow-300 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="absolute bottom-0 left-0 w-0 h-1 bg-green-300 transition-all duration-100 ease-in-out group-hover:w-full"></span>
         </li>
       ))}
     </ul>
