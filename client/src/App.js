@@ -1,17 +1,15 @@
-
-
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Switch to HashRouter
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact'; // Import Contact component
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <Router>
+    <Router> {/* Use HashRouter */}
       <div className="min-h-screen flex flex-col bg-black text-white">
         <Navigation />
         <main className="flex-grow">
@@ -19,7 +17,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} /> {/* Add the Contact route */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
@@ -29,4 +27,3 @@ const App = () => {
 };
 
 export default App;
-

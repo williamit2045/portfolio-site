@@ -1,5 +1,6 @@
 import React from 'react';
-import { ExternalLink, Github, Radius } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
+import PropTypes from 'prop-types';
 import textureB from '../assets/spiration-dark.webp';
 import textureA from '../assets/folk-pattern-black.webp';
 
@@ -55,8 +56,8 @@ const ProjectCard = ({ project }) => (
     className="bg-black rounded-lg overflow-hidden transition-all duration-300 hover:bg-texture"
     style={{
       backgroundImage: `url(${textureA})`,
-      backgroundSize: 'auto', // Use original size for tiling
-      backgroundRepeat: 'repeat', // Repeat the texture across the entire background
+      backgroundSize: 'auto',
+      backgroundRepeat: 'repeat',
     }}
   >
     <div className="p-6 space-y-4">
@@ -94,27 +95,46 @@ const ProjectCard = ({ project }) => (
   </div>
 );
 
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    icon: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    link: PropTypes.string.isRequired,
+    techStack: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.string), PropTypes.string]),
+    category: PropTypes.string,
+    business: PropTypes.string,
+    valuation: PropTypes.string,
+  }).isRequired,
+};
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black p-8"
-    style={{
-      backgroundImage: `url(${textureB})`,
-      backgroundSize: 'auto', // Use original size for tiling
-      backgroundRepeat: 'repeat', // Repeat the texture across the entire background
-    }}>
+    <div
+      className="min-h-screen bg-gradient-to-br from-gray-900 to-black p-8"
+      style={{
+        backgroundImage: `url(${textureB})`,
+        backgroundSize: 'auto',
+        backgroundRepeat: 'repeat',
+      }}
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center mb-12">
-          <h1 className="text-4xl font-bold text-white">Projects</h1>
-          <a href="https://github.com/williamit2045" target="_blank" rel="noopener noreferrer"
-             className="flex items-center space-x-2 text-gray-400 hover:text-white">
+
+        <div className="flex justify-between items-center mb-12" style={{marginTop: '7rem'}} >
+          <h1 className="text-4xl font-bold text-white">Four Web Projects:</h1>
+          <a
+            href="https://github.com/williamit2045"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-gray-400 hover:text-white"
+          >
             <Github className="h-6 w-6" />
             <span>View on GitHub</span>
           </a>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projectData.map(project => (
+          {projectData.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

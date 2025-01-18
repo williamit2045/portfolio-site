@@ -1,0 +1,86 @@
+## Navigation and Deployment Issues Document
+
+### Purpose:
+This document serves as a record of the current issues and requirements for the portfolio site. It will ensure future conversations and fixes stay aligned with the progress made so far.
+
+---
+
+### **Navigation Issue: Dropdown Links Not Working**
+
+#### **Observations:**
+1. On mobile devices (e.g., iPhone), the dropdown navigation links do not work.
+2. Links in the dropdown cover the header, making the interface cluttered.
+3. Dropdown is not user-friendly in its current state.
+
+#### **Proposed Fix:**
+1. **Display Navigation Links Across the Top on All Screens:**
+   - Even on smaller screens, render the links horizontally across the top rather than in a dropdown.
+   - This approach will eliminate dropdown issues entirely.
+   
+2. **Dropdown Redesign (If Dropdown Must Be Retained):**
+   - Change the dropdown layout to display links in **2 rows and 2 columns**.
+   - Use a **transparent background** for better visibility.
+   - Ensure proper spacing and padding to avoid overlapping with the header.
+
+3. **Ensure Links Are Functional:**
+   - Debug the dropdown implementation to ensure `onClick` or `to` properties work as expected.
+   - Verify that `react-router-dom` correctly handles navigation in both the desktop and mobile versions.
+
+#### **Action Plan:**
+- **Option 1 (Preferred):** Convert navigation to always show links across the top.
+- **Option 2:** Fix the dropdown to ensure proper alignment, spacing, and functionality.
+
+---
+
+### **Deployment Issue: Links Not Working After Deployment**
+
+#### **Observations:**
+1. Deployed site loads on mobile devices but navigation links do not work.
+2. React Router’s handling of routing on GitHub Pages seems to be causing a 404 error for non-root paths.
+
+#### **Proposed Fix:**
+1. **React Router Configuration for GitHub Pages:**
+   - Add a `404.html` file in the `public` directory to redirect all paths to `index.html`.
+   - Example:
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+       <head>
+         <meta http-equiv="refresh" content="0;url=/" />
+       </head>
+       <body></body>
+     </html>
+     ```
+   - Re-deploy the site using:
+     ```bash
+     npm run deploy
+     ```
+
+2. **Debugging Navigation Links:**
+   - Ensure proper use of `Link` from `react-router-dom` for navigation.
+   - Test navigation thoroughly on the deployed site in both desktop and mobile views.
+
+3. **Update DNS Settings for Custom Domain:**
+   - Confirm that `CNAME` records for `www.williamteach.pro` point to `williamit2045.github.io`.
+   - Wait for DNS propagation to complete.
+
+---
+
+### **Summary of Current Needs:**
+1. **Primary Priority:**
+   - Fix navigation links to work across all devices.
+   - Ensure links are visible across the top on all screen sizes or redesign the dropdown as specified above.
+
+2. **Deployment Debugging:**
+   - Resolve React Router 404 issues for non-root paths on the deployed site.
+   - Confirm DNS propagation and HTTPS enforcement for the custom domain.
+
+3. **Improved Mobile Design:**
+   - Dropdown redesign or elimination for better user experience on mobile devices.
+
+---
+
+### **Additional Notes:**
+- The site is now live at: [https://www.williamteach.pro](https://www.williamteach.pro) but requires fixes for proper functionality.
+- Communication should include updates to this document for better tracking of progress and alignment in future conversations.
+

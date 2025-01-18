@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       spacing: {
         '45vw': '45vw',
+        18: '4.5rem', // Adds 'mt-18', 'pt-18', etc.
       },
       transformOrigin: {
         'left-center': 'left center',
