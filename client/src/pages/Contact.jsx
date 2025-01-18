@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Github, Linkedin, Twitter, BookOpen, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-import textureD from '../assets/paisley.webp';
 import textureA from '../assets/folk-pattern-black.webp';
 import textureB from '../assets/double-bubble-dark.webp';
 import textureC from '../assets/connectwork.webp';

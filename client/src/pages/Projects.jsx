@@ -13,7 +13,7 @@ const projectData = [
     valuation: "$5M - $10M by 2027",
     business: "A nonprofit funded by academic and private sponsorships, subscription-based services, user-taught ads for free content, and tips for user-curators.",
     category: "Community Groups",
-    link: "https://globe-thoughts.com"
+    link: "https://www.globe-thoughts.com"
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const projectData = [
     valuation: "$100K in 2 years",
     business: "Increases metadata through user engagement, building collective knowledge.",
     category: "Knowledge Enthusiasts",
-    link: "https://memeplex.pro"
+    link: "https://www.memeplex.pro"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projectData = [
     valuation: "$500K in 2 years",
     business: "Starts with t-shirt design and expands to a full creative marketplace.",
     category: "Creative Entrepreneurs",
-    link: "https://apex-vets.pro"
+    link: "https://www.apex-vets.pro"
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const projectData = [
     valuation: "$750K in 2 years",
     business: "Combines physical and digital spaces to foster innovation and support veterans.",
     category: "Veteran Innovators",
-    link: "https://nexus-vets.pro"
+    link: "https://www.nexus-vets.pro"
   }
 ];
 

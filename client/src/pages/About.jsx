@@ -118,8 +118,9 @@ const About = () => {
             From my years in the Navy, Academia, and now in Web Innovation,
           </p>
           <p className="text-xl text-blue-300 max-w-1x1 mx-auto">
-          I'm familiar with the fault-lines between cultures.
-          </p>         
+          I'm familiar with the fault-lines between cultures, institutions and academic subjects.
+          </p>  
+                 
         </div>
       </section>
 
