@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfbb887c.css",
-    "main.js": "/static/js/main.f9a38166.js",
+    "main.css": "/static/css/main.f33a04a5.css",
+    "main.js": "/static/js/main.fff0dc40.js",
     "static/js/488.5dc00adb.chunk.js": "/static/js/488.5dc00adb.chunk.js",
     "static/media/abstract-brain-heart.jpg": "/static/media/abstract-brain-heart.3879a57541840a24e383.jpg",
     "static/media/bridge.webp": "/static/media/bridge.ee4415fe3daf702a1fff.webp",
@@ -13,12 +13,12 @@
     "index.html": "/index.html",
     "static/media/folk-pattern-black.webp": "/static/media/folk-pattern-black.f0bfe78611588cc8ed0b.webp",
     "static/media/carbon_fibre.webp": "/static/media/carbon_fibre.dd9c8cb2e3c230ee8556.webp",
-    "main.cfbb887c.css.map": "/static/css/main.cfbb887c.css.map",
-    "main.f9a38166.js.map": "/static/js/main.f9a38166.js.map",
+    "main.f33a04a5.css.map": "/static/css/main.f33a04a5.css.map",
+    "main.fff0dc40.js.map": "/static/js/main.fff0dc40.js.map",
     "488.5dc00adb.chunk.js.map": "/static/js/488.5dc00adb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfbb887c.css",
-    "static/js/main.f9a38166.js"
+    "static/css/main.f33a04a5.css",
+    "static/js/main.fff0dc40.js"
   ]
 }
