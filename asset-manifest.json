@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.64297494.css",
-    "main.js": "/static/js/main.8ba89d44.js",
+    "main.js": "/static/js/main.0ee7494e.js",
     "static/js/488.5dc00adb.chunk.js": "/static/js/488.5dc00adb.chunk.js",
     "static/media/abstract-brain-heart.jpg": "/static/media/abstract-brain-heart.3879a57541840a24e383.jpg",
     "static/media/bridge.webp": "/static/media/bridge.ee4415fe3daf702a1fff.webp",
@@ -14,11 +14,11 @@
     "static/media/folk-pattern-black.webp": "/static/media/folk-pattern-black.f0bfe78611588cc8ed0b.webp",
     "static/media/carbon_fibre.webp": "/static/media/carbon_fibre.dd9c8cb2e3c230ee8556.webp",
     "main.64297494.css.map": "/static/css/main.64297494.css.map",
-    "main.8ba89d44.js.map": "/static/js/main.8ba89d44.js.map",
+    "main.0ee7494e.js.map": "/static/js/main.0ee7494e.js.map",
     "488.5dc00adb.chunk.js.map": "/static/js/488.5dc00adb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64297494.css",
-    "static/js/main.8ba89d44.js"
+    "static/js/main.0ee7494e.js"
   ]
 }
