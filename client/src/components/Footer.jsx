@@ -7,7 +7,7 @@ const Footer = () => (
         &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
       </p>
       <p className="mt-2 italic text-gray-400">
-        Only when people stop projecting their insecurities upon one another will the world be just. This is the endgame of social justice.
+        When insecurity no longer defines how we see each other, justice becomes possible. That's the real horizon of social progress. 
       </p>
     </footer>
 );
