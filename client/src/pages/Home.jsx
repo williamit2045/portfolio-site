@@ -16,19 +16,19 @@ const Home = () => (
     {/* Centered Title */}
     <div className="text-center space-y-6 max-w-3xl mt-0">
       <h1 className="text-5xl font-extrabold text-green-400">
-        Where is your freedom?
+        For people who know clarity is overdue,
       </h1>
 
       <h2 className="text-2xl font-bold text-orange-400">
-        Reality Thrives Without Mental Limitations
+        I build full-stack web apps, UX/UI systems, AI collaboration tools, human-aligned software, and clarity-driven platforms.
       </h2>
 
       <p className="text-lg text-orange-300 leading-relaxed">
-        Insecurities and artificial limitations breed corruption.
+        Executed with guts and vision,
       </p>
 
       <p className="text-1xl text-blue-300 leading-relaxed">
-        Freedom, Clarity, and Connection thrive in their absence.
+        Built for alignment- technical, moral, and human.
       </p>
     </div>
 
